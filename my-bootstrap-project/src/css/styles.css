@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #90b77d;
+}
+
+.container {
+    flex: 1;
+}
+
+h1, h2, h3 {
+    color: #343a40;
+}
+
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+}
+
+.card-custom {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
+.navbar {
+    background-color: #343a40;
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+}
+
+.footer-custom {
+    background-color: #ed9cad;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    width: 100%;
+}
