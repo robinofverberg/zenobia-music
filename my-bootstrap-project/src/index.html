@@ -6,9 +6,12 @@
     <title>Zenobia Green Music</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header class="navbar navbar-expand-lg navbar-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -18,7 +21,10 @@
                     <a class="nav-link" href="#intro">Intro</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#albums">Albums</a>
+                    <a class="nav-link" href="#discography">Discography</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#live-dates">Live Dates</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
@@ -28,18 +34,17 @@
     </header>
 
     <div class="container mt-5">
-        <section id="intro" class="mb-5">
-            <h2>Welcome to Zenobia Green Music</h2>
-            <p>This is a simple project using Bootstrap.</p>
+        <section id="intro" class="mb-5 text-center">
+            <h1 class="mb-5">Welcome to Zenobia Green Music</h1>
             <img src="images/intro.png" class="img-fluid" alt="Intro Image">
         </section>
 
-        <section id="albums" class="mb-5">
-            <h2>Albums</h2>
+        <section id="discography" class="mb-5 text-center">
+            <h1>Discography</h1>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <img src="images/album1.jpg" class="card-img-top" alt="Album 1">
+                        <img src="images/album1.png" class="card-img-top" alt="Album 1">
                         <div class="card-body">
                             <h5 class="card-title">Album 1</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -70,8 +75,19 @@
             </div>
         </section>
 
-        <section id="about" class="mb-5">
-            <h2>About</h2>
+        <section id="live-dates" class="mb-5 text-center">
+            <h1>Live Dates</h1>
+            <ul class="list-unstyled">
+                <li><strong>January 15, 2024</strong> - New York, NY</li>
+                <li><strong>February 20, 2024</strong> - Los Angeles, CA</li>
+                <li><strong>March 10, 2024</strong> - Chicago, IL</li>
+                <li><strong>April 5, 2024</strong> - Houston, TX</li>
+                <li><strong>May 25, 2024</strong> - Miami, FL</li>
+            </ul>
+        </section>
+
+        <section id="about" class="mb-5 text-center">
+            <h1>About</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
     </div>

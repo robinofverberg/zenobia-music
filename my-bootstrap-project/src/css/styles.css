@@ -4,6 +4,12 @@ html, body {
     padding: 0;
 }
 
+.trade-winds-regular {
+    font-family: "Trade Winds", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
 body {
     display: flex;
     flex-direction: column;
@@ -11,12 +17,15 @@ body {
     background-color: #90b77d;
 }
 
-.container {
+.container-fluid {
     flex: 1;
+    padding: 0 15px;
 }
 
 h1, h2, h3 {
     color: #343a40;
+    text-align: center;
+    font-family: Trade Winds, serif;
 }
 
 .btn-custom {
@@ -30,10 +39,12 @@ h1, h2, h3 {
 }
 
 .navbar {
-    background-color: #343a40;
+    background-color: #ed9cad;
     margin: 0;
     padding: 0;
     width: 100%; 
+    font-size: 1.5em;
+    font-family: Trade Winds, serif;
 }
 
 .footer-custom {
