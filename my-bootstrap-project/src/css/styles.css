@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
-    background-color: #90b77d;
+    background-color: #90b77e;
 }
 
 .container-fluid {
@@ -30,8 +30,10 @@ h1, h2, h3 {
 }
 
 .btn-custom {
-    background-color: #3be477;
+    background-color: #ed9cad;
     color: black;
+    width: 100%;
+    bottom: 0;
 }
 
 .card-custom {
@@ -48,9 +50,22 @@ h1, h2, h3 {
     font-family: Trade Winds, serif;
 }
 
-.navbar-nav .nav-link {
-    color: #343a40 !important;
+.navbar-nav {
+    margin: 0 auto;
 }
+
+.nav-link {
+    color: #343a40 !important; /* Change the color to your desired color */
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: #000000 !important; /* Change the hover color to your desired color */
+}
+
+/* .navbar-nav .nav-link {
+    color: #343a40;
+} */
 
 .footer-custom {
     background-color: #ed9cad;
@@ -82,10 +97,11 @@ h1, h2, h3 {
 }
 
 .card {
-    background-color: #90b77d; /* Same color as the background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
-    margin-bottom: 20px; /* Add space between cards */
-    height: 100%;
+    background-color: #75946a; /* Same color as the background */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    width: 300px;
+    margin: 30px;
+    border-color: #ed9cad;
 }
 
 .card img {
@@ -93,8 +109,32 @@ h1, h2, h3 {
     height: auto; /* Maintain aspect ratio */
 }
 
-.row {
-    justify-content: center; /* Center the row content */
+#featured-on .container-fluid {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#featured-on .card {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+}
+
+#social-media img {
+    width: 50px;
+    height: 50px;
+}
+
+#youtube-clip iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+#youtube-video {
+    width: 90%;
+    height: auto;
 }
 
 @media (max-width: 768px) {
@@ -107,5 +147,15 @@ h1, h2, h3 {
 
     .container-fluid {
         padding-right: 0;
+    }
+
+    .card {
+        width: 100%; /* Make cards full width on smaller screens */
+    }
+}
+
+@media (min-width: 768px) {
+    #youtube-video {
+        width: 50%;
     }
 }
